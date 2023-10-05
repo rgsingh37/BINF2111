@@ -1,0 +1,56 @@
+understand your data 
+
+expectations - format types domains uniqueness 
+assumptions - does it make sense to use data from x in a new content Y 
+restrictions - licenses embargos 
+
+standarize your data 
+values -  ID mapping unit conversation, adding removing prefixes 
+columns - adding removing reaaranging 
+
+data formats 
+ column oriented data - spreadsheets CSV, fixed position, one line per record, fixed set fields 
+
+key valued data - multiple lines per record 
+varaible number of fields/values 
+
+hieraechial data 
+nested - usuallys requires a more complex parser 
+usually follows a well-defined schema 
+
+web based API resourses
+
+csv - column structured 
+tsv - tab structured 
+
+complex code not needed - unix can handle the rest, excel can handle small datasets 
+
+xml formats not readable by humans 
+machine readable, can represent complex structures 
+
+key value formats easy to read 
+straightforward to parse, one key value pair per line 
+supports multiple values 
+
+cut -  syntax anatomy UNIX's scissors 
+cut [options]file.txt 
+-d (--delimiter), set field delimeter 
+-f (-- fiels=LIST)
+-b (--bytes=LIST) select by specifying a byte 
+-c (--characters=LIST) select by specifying a character 
+-s (-- only-delimited) suppress non-matches 
+
+sort - syntax anatomy of sort 
+sort [options] file.txt
+-k1
+-t "t"
+-n , sort numerically 
+-r , reverse sort order
+-u, drop duplicates from the result
+
+uniq - syntax anatomy of uniq 
+uniq[options] file.txt 
+sort -k1  doppleganger_names.txt | uniq-c (most repeats)
+use cut -f2 doppleganger_names.txt |sort|uniq-c
+
+
